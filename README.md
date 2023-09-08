@@ -1,78 +1,64 @@
-![Banner](https://user-images.githubusercontent.com/1998168/235366625-e615e68d-592c-4f18-9c9f-1e5cd1778557.png)
+Anse — это полностью оптимизированный пользовательский интерфейс для чатов с искусственным интеллектом.
 
-# Anse
+- 🍿 **Предварительный просмотр**: https://anse.app
+- 📖 **Документация**: https://docs.anse.app
+- ✨ **Примечания к выпуску**: https://github.com/anse-app/anse/releases
 
-English | [简体中文](./README.zh-CN.md) | [日本語](./README_JA-JP.md)
+## Функции
 
-Anse is a fully optimized UI for AI Chats.
+- **🚀 Мощная система плагинов**. Работает на базе плагина Provider, легко расширяет платформы искусственного интеллекта, такие как [OpenAI](https://openai.com/), [Replication](https://rescribe.com/ ), а также поддерживает пользовательские параметры модели.
+- **💬 Сохранение записи сеанса** - Мы используем IndexDB для хранения локальных данных, они не будут загружены на сервер, проблемы безопасности гарантированы.
+- **🎉Режимы нескольких сеансов** - Обеспечивает различные режимы разговоров, поддерживает «Одиночный разговор», «Непрерывный разговор», «Генерацию изображений OpenAI», «Стабильное распространение» и многое другое.
+- **💎 Улучшенный пользовательский интерфейс**. Мы провели рефакторинг пользовательского интерфейса веб-сайта для предыдущей версии, оптимизировали множество деталей, а также адаптировали его для мобильных устройств и темного режима.
+- **🌈 Развертывание в один клик** - Поддержка развертывания в один клик, отказ от использования переменных среды. Вы можете обратиться к нашей документации для развертывания веб-сайта в [Vercel](https://vercel.com/), [Netlify] (https://www.netlify.com/), `Docker`, `Node` и другие платформы.
 
-- 🍿 **Live preview**: https://anse.app
-- 📖 **Documentation**: https://docs.anse.app
-- ✨ **Release Notes**: https://github.com/anse-app/anse/releases
+## Запуск локально
 
-## Features
-
-- **🚀 Powerful Plugin System** - Powered by `Provider plugin` , easy to extend AI platforms such as [OpenAI](https://openai.com/), [Replicate](https://replicate.com/), and also supports custom model parameters.
-- **💬 Session Record Saving** - We use `IndexDB` to store local data, it will not be uploaded to the server, security issues are guaranteed.
-- **🎉 Multiple Session Modes** - Provides different conversations modes，support `Single Conversation`, `Continuous Conversation`, `OpenAI Image Generation`、`Stable Diffusion` and more.
-- **💎 Improved UI Experience** - We have refactored the website UI for the previous version, optimized a lot of details, and also adapted to `mobile end` and `dark mode`.
-- **🌈 One-Click Deployment** - Support one-click deployment, abandoned use environment variables, you can refer to our documentation to deploy the website to [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), `Docker`, `Node` and other platforms.
-
-## Running Locally
-
-### Pre environment
-1. **Node**: Check that both your development environment and deployment environment are using `Node v18` or later. You can use [nvm](https://github.com/nvm-sh/nvm) to manage multiple `node` versions locally。
-   ```bash
-    node -v
+### Предварительная среда
+1. **Узел**: убедитесь, что и ваша среда разработки, и среда развертывания используют Node v18 или более позднюю версию. Вы можете использовать [nvm](https://github.com/nvm-sh/nvm) для локального управления несколькими версиями узла.。
+   ``` баш
+    узел -v
    ```
-2. **PNPM**: We recommend using [pnpm](https://pnpm.io/) to manage dependencies. If you have never installed pnpm, you can install it with the following command:
-   ```bash
-    npm i -g pnpm
+2. **PNPM**: мы рекомендуем использовать [pnpm](https://pnpm.io/) для управления зависимостями. Если вы никогда не устанавливали pnpm, вы можете установить его с помощью следующей команды:
+   ``` баш
+    НПМ я -g НПМ
    ```
-3. **OPENAI_API_KEY**: Before running this application, you need to obtain the API key from OpenAI. You can register the API key at [https://beta.openai.com/signup](https://beta.openai.com/signup).
+3. **OPENAI_API_KEY**: перед запуском этого приложения вам необходимо получить ключ API от OpenAI. Вы можете зарегистрировать ключ API по адресу [https://beta.openai.com/signup](https://beta.openai.com/signup).
 
-### Getting Started
+### Начиная
 
-1. Install dependencies
-   ```bash
-    pnpm install
+1. Установите зависимости
+   ``` баш
+    установка пнпм
    ```
-2. Run the application, the local project runs on `http://localhost:3000/`
-   ```bash
-    pnpm run dev
+2. Запустите приложение, локальный проект запускается на `http://localhost:3000/`.
+   ``` баш
+    pnpm запустить разработку
    ```
-3. Add your [OpenAI API key](https://platform.openai.com/account/api-keys) to the settings panel, then enjoy it!
+3. Добавьте свой [ключ OpenAI API](https://platform.openai.com/account/api-keys) на панель настроек и наслаждайтесь!
 
-## How to deploy
-For more details, please refer to this document: https://docs.anse.app/self-deploy
+## Как развернуть
+Более подробную информацию можно найти в этом документе: https://docs.anse.app/self-deploy.
 
-## Enable Automatic Updates
+## Включить автоматические обновления
 
-After forking the project, you need to manually enable Workflows and Upstream Sync Action on the Actions page of the forked project. Once enabled, automatic updates will be scheduled every day:
+После разветвления проекта вам необходимо вручную включить рабочие процессы и действие синхронизации исходного кода на странице «Действия» разветвленного проекта. После включения автоматические обновления будут планироваться каждый день:
 
-![](https://cdn.staticaly.com/gh/yzh990918/static@master/20230518/image.2omctdf8bbk0.webp)
-## Frequently Asked Questions
+Вопрос: Ошибка типа: не удалось получить данные (невозможно подключиться к OpenAI API).
 
-Q: TypeError: fetch failed (can't connect to OpenAI Api)
+О: Ссылка: https://github.com/anse-app/chatgpt-demo/issues/34.
 
-A: Reference: https://github.com/anse-app/chatgpt-demo/issues/34
+Вопрос: выдать новый TypeError(`${context}` не является ReadableStream.)
 
-Q: throw new TypeError(`${context}` is not a ReadableStream.)
+О: Версия Node должна быть v18 или новее, ссылка: https://github.com/anse-app/chatgpt-demo/issues/65.
 
-A: The Node version needs to be `v18` or later，reference: https://github.com/anse-app/chatgpt-demo/issues/65
+Вопрос: Ускорить внутренний доступ без необходимости обучения по развертыванию прокси-сервера?
 
-Q: Accelerate domestic access without the need for proxy deployment tutorial?
+О: Вы можете обратиться к этому руководству: https://github.com/anse-app/chatgpt-demo/discussions/270.
 
-A: You can refer to this tutorial: https://github.com/anse-app/chatgpt-demo/discussions/270
+## Вклад
 
-## Contributing
+Этот проект существует благодаря всем, кто внес свой вклад.
 
-This project exists thanks to all those who contributed.
+Спасибо всем нашим сторонникам!🙏
 
-Thank you to all our supporters!🙏
-
-[![img](https://contrib.rocks/image?repo=anse-app/anse)](https://github.com/anse-app/anse/graphs/contributors)
-
-## License
-
-MIT © [ddiu8081](https://github.com/anse-app/anse/blob/main/LICENSE)
