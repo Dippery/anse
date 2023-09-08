@@ -58,3 +58,76 @@ Anse — это полностью оптимизированный пользо
 
 Спасибо всем нашим сторонникам!🙏
 
+Contributing
+This project exists thanks to all those who contributed.
+
+Thank you to all our supporters!🙏
+
+img
+
+License
+MIT © ddiu8081
+
+About
+Supercharged experience for ChatGPT, DALL-E and Stable Diffusion.
+
+anse.app
+Topics
+openai gpt-3 dall-e gpt-4 stable-diffusion chatgpt gpt-35-turbo
+Resources
+ Readme
+License
+ MIT license
+Security policy
+ Security policy
+ Activity
+Stars
+ 1.4k stars
+Watchers
+ 13 watching
+Forks
+ 313 forks
+Report repository
+Releases 12
+v1.1.11
+Latest
+on Jul 10
++ 11 releases
+Packages
+No packages published
+Contributors
+15
+@ddiu8081
+@yzh990918
+@CNSeniorious000
+@chancelyg
+@tsui66
+@ninvfeng
+@eltociear
+@CaoYunzhou
+@YuJian920
+@Nikit-Singh
+@LyuLumos
+@Dippery
++ 4 contributors
+Deployments
+167
+ Production 4 months ago
+ Production – anse 2 days ago
+ Preview – anse 3 days ago
++ 164 deployments
+Languages
+TypeScript
+92.4%
+ 
+CSS
+4.1%
+ 
+JavaScript
+1.7%
+ 
+Astro
+1.7%
+ 
+Dockerfile
+0.1%
